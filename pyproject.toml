@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "pypassgen"
+version = "0.0.1"
+description = ""
+authors = ["Nicholas Anastasi <nanastasi@sprocketsecurity.com>"]
+readme = "README.md"
+homepage = "https://github.com/puzzlepeaches/pypassgen"
+repository = "https://github.com/puzzlepeaches/pypassgen"
+exclude = ["tests"]
+include = ["LICENSE", "CHANGELOG.md"]
+license = "BSD 3-Clause License"
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+packages = [
+    { include = "pypassgen"}
+]
+
+[tool.poetry.scripts]
+pypassgen = 'pypassgen.__main__:main'
+ppg = 'pypassgen.__main__:main'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "*"
+rich = "*"
+rich-click = "^1.5.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+flake8 = "*"
+black = "*"
+pre-commit = "*"
+isort = "*"
+
+[tool.black]
+line-length = 99 # override black's default line-length
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.tox
+  | venv
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+# make it compatible with black
+profile = "black"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

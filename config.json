@@ -1,0 +1,21 @@
+{
+  "seasons": ["Winter", "Summer", "Spring", "Fall"],
+  "months": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "words": ["Password", "Welcome"],
+  "years": ["2021", "2022"],
+  "numbers": ["1", "2", "3", "123"],
+  "specials": ["!", "@", "#"]
+}
