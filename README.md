@@ -43,7 +43,7 @@ poetry install
 
 ## Getting started
 
-pypassgen is very simple to use. First, modify the included `config.json` file to your liking. Note that no additional keys can be added to the config file. Modify the config file to your liking and then run the following command:
+pypassgen is very simple to use. First, modify the included `config.json` file to your liking. An example `config.json` file is included in the root of the repository. Note that no additional keys can be added to the config file. Modify the config file to your liking and then run the following command:
 
 ```
 ppg all config.json -
